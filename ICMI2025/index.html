@@ -1,553 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=0.8" />
-    <title>ACHI2023 - Comparing the Effect of Different Styles of Voice on Children's Engagement with a Virtual Robot: A Preliminary Study</title>
-    <link
-      href="
-            https://cdn.jsdelivr.net/npm/bootswatch@5.2.3/dist/cerulean/bootstrap.min.css
-            "
-      rel="stylesheet"
-    />
-    <link rel="icon" href="assets/imgs/icon.jpg" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos - Miroki Virtual Agent</title>
     <style>
-      audio {
-        max-height: 50%;
-        max-width: 100%;
-        min-width: 50%;
-        margin: auto;
-      }
-      table {
-        border-collapse: collapse;
-        table-layout: fixed;
-      }
-      th,
-      td {
-        word-wrap: break-word;
-      }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .video-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .video-item {
+            width: 48%;
+            text-align: center;
+        }
+        video {
+            width: 100%;
+            height: auto;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .video-title {
+            margin: 10px 0;
+            font-weight: bold;
+        }
     </style>
-  </head>
-
-  <body>
-    <nav class="navbar navbar-expand navbar-light text-center">
-      <div
-        class="container d-flex flex-column align-items-center"
-        style="width: 90%"
-      >
-        <a class="navbar-brand" href="" style="white-space: normal"
-          ><h1>
-            Comparing the Effect of Different Styles of Voice on Children's
-            Engagement with a Virtual Robot: A Preliminary Study
-          </h1>
-        </a>
-        <p>
-          <b>Authors</b>: Romain Vallée, Lucas Prégaldiny, Véronique Aubergé,
-          Émilie Cénac, Serge Tisseron, Olivier Aycard
-        </p>
-        <p>
-          <b>
-            <a
-              href="https://www.thinkmind.org/index.php?view=article&articleid=achi_2023_4_220_20098"
-              >Access the article</a
-            >
-          </b>
-        </p>
-      </div>
-    </nav>
-
-    <div>
-      <table class="table table-hover text-center">
-        <thead>
-          <tr>
-            <th scope="col">Situation</th>
-            <th scope="col">Voice A</th>
-            <th scope="col">Voice B</th>
-            <th scope="col">Voice C</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">Experimenter asks robots if they are ready</th>
-            <td>
-              oui, c’est bien ça !<br />
-              <audio controls="">
-                <source src="assets/audio/1_ready/A_confirmation.wav" />
-                Your browser does not support the audio element.
-              </audio>
-            </td>
-            <td>
-              oui &lt;<i>laughter</i>&gt;<br />
-              <audio controls="">
-                <source src="assets/audio/1_ready/B_confirmation.wav" />
-                Your browser does not support the audio element.
-              </audio>
-            </td>
-            <td>
-              oui, c’est bien ça<br />
-              <audio controls="">
-                <source src="assets/audio/1_ready/C_confirmation.wav" />
-                Your browser does not support the audio element.
-              </audio>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">Character is picked by the child to begin</th>
-            <td>
-              super !<br />
-              <audio controls="">
-                <source src="assets/audio/2_picked/A_choisi.wav" />
-                Your browser does not support the audio element.
-              </audio>
-            </td>
-            <td>
-              ouiii<br />
-              <audio controls="">
-                <source src="assets/audio/2_picked/B_choisi.wav" />
-                Your browser does not support the audio element.
-              </audio>
-            </td>
-            <td>
-              ça marche<br />
-              <audio controls="">
-                <source src="assets/audio/2_picked/C_choisi.wav" />
-                Your browser does not support the audio element.
-              </audio>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">
-              Character is not picked by the child to begin (counted-out)
-            </th>
-            <td>
-              ah bon<br />
-              <audio controls="">
-                <source src="assets/audio/3_not_picked/A_ah_bon.wav" />
-                Your browser does not support the audio element.
-              </audio>
-            </td>
-            <td>
-              ah bon, pff<br />
-              <audio controls="">
-                <source src="assets/audio/3_not_picked/B_ah_bon.wav" />
-                Your browser does not support the audio element.
-              </audio>
-            </td>
-            <td>
-              ah bon<br />
-              <audio controls="">
-                <source src="assets/audio/3_not_picked/C_ah_bon.wav" />
-                Your browser does not support the audio element.
-              </audio>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">Acknowledgement 1</th>
-            <td>
-              c’est bien compris !<br />
-              <audio controls="">
-                <source src="assets/audio/4_acknowledgement/A/A_ackno_1.wav" />
-                Your browser does not support the audio element.
-              </audio>
-            </td>
-            <td>
-              ça marche &lt;<i>laughter</i>&gt;<br />
-              <audio controls="">
-                <source src="assets/audio/4_acknowledgement/B/B_ackno_1.wav" />
-                Your browser does not support the audio element.
-              </audio>
-            </td>
-            <td>
-              c’est bien compris<br />
-              <audio controls="">
-                <source src="assets/audio/4_acknowledgement/C/C_ackno_1.wav" />
-                Your browser does not support the audio element.
-              </audio>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">Acknowledgement 2</th>
-            <td>
-              j’ai bien noté<br />
-              <audio controls="">
-                <source src="assets/audio/4_acknowledgement/A/A_ackno_2.wav" />
-                Your browser does not support the audio element.
-              </audio>
-            </td>
-            <td>
-              &lt;<i>acknowledgement sound</i>&gt;<br />
-              <audio controls="">
-                <source src="assets/audio/4_acknowledgement/B/B_ackno_2.wav" />
-                Your browser does not support the audio element.
-              </audio>
-            </td>
-            <td>
-              d’accord<br />
-              <audio controls="">
-                <source src="assets/audio/4_acknowledgement/C/C_ackno_2.wav" />
-                Your browser does not support the audio element.
-              </audio>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">Acknowledgement 3</th>
-            <td>
-              ça marche !<br />
-              <audio controls="">
-                <source src="assets/audio/4_acknowledgement/A/A_ackno_3.wav" />
-                Your browser does not support the audio element.
-              </audio>
-            </td>
-            <td>
-              Okay &lt;<i>laughter</i>&gt;<br />
-              <audio controls="">
-                <source src="assets/audio/4_acknowledgement/B/B_ackno_3.wav" />
-                Your browser does not support the audio element.
-              </audio>
-            </td>
-            <td>
-              j’ai bien noté<br />
-              <audio controls="">
-                <source src="assets/audio/4_acknowledgement/C/C_ackno_3.wav" />
-                Your browser does not support the audio element.
-              </audio>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">Robot brings back an ingredient 1</th>
-            <td>
-              et voilà !<br />
-              <audio controls="">
-                <source src="assets/audio/5_brings_back/A/A_ramene_1.wav" />
-                Your browser does not support the audio element.
-              </audio>
-            </td>
-            <td>
-              et voilà, &lt;<i>hm ?</i>&gt;<br />
-              <audio controls="">
-                <source src="assets/audio/5_brings_back/B/B_ramene_1.wav" />
-                Your browser does not support the audio element.
-              </audio>
-            </td>
-            <td>
-              et voilà<br />
-              <audio controls="">
-                <source src="assets/audio/5_brings_back/C/C_ramene_1.wav" />
-                Your browser does not support the audio element.
-              </audio>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">Robot brings back an ingredient 2</th>
-            <td>
-              tiens !<br />
-              <audio controls="">
-                <source src="assets/audio/5_brings_back/A/A_ramene_2.wav" />
-                Your browser does not support the audio element.
-              </audio>
-            </td>
-            <td>
-              tiens, &lt;<i>small laughter</i>&gt;<br />
-              <audio controls="">
-                <source src="assets/audio/5_brings_back/B/B_ramene_2.wav" />
-                Your browser does not support the audio element.
-              </audio>
-            </td>
-            <td>
-              tiens<br />
-              <audio controls="">
-                <source src="assets/audio/5_brings_back/C/C_ramene_2.wav" />
-                Your browser does not support the audio element.
-              </audio>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">Robot brings back an ingredient 3</th>
-            <td>
-              j’en ai trouvé !<br />
-              <audio controls="">
-                <source src="assets/audio/5_brings_back/A/A_ramene_3.wav" />
-                Your browser does not support the audio element.
-              </audio>
-            </td>
-            <td>
-              &lt;<i>aha !</i>&gt;<br />
-              <audio controls="">
-                <source src="assets/audio/5_brings_back/B/B_ramene_3.wav" />
-                Your browser does not support the audio element.
-              </audio>
-            </td>
-            <td>
-              j’en ai trouvé<br />
-              <audio controls="">
-                <source src="assets/audio/5_brings_back/C/C_ramene_3.wav" />
-                Your browser does not support the audio element.
-              </audio>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">Ingredient already used 1</th>
-            <td>
-              ah, j’avais pas prévu ça<br />
-              <audio controls="">
-                <source
-                  src="assets/audio/6_invalid/invalide_deja_utilise/A/A_repetition_1.wav"
-                />
-                Your browser does not support the audio element.
-              </audio>
-            </td>
-            <td>
-              &lt;<i>euh … hm ?</i>&gt;<br />
-              <audio controls="">
-                <source
-                  src="assets/audio/6_invalid/invalide_deja_utilise/B/B_repetition_1.wav"
-                />
-                Your browser does not support the audio element.
-              </audio>
-            </td>
-            <td>
-              j’avais pas prévu ça<br />
-              <audio controls="">
-                <source
-                  src="assets/audio/6_invalid/invalide_deja_utilise/C/C_repetition_1.wav"
-                />
-                Your browser does not support the audio element.
-              </audio>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">Ingredient already used 2</th>
-            <td>
-              non, désolé<br />
-              <audio controls="">
-                <source
-                  src="assets/audio/6_invalid/invalide_deja_utilise/A/A_repetition_2.wav"
-                />
-                Your browser does not support the audio element.
-              </audio>
-            </td>
-            <td>
-              &lt;<i>euh …</i>&gt;<br />
-              <audio controls="">
-                <source
-                  src="assets/audio/6_invalid/invalide_deja_utilise/B/B_repetition_2.wav"
-                />
-                Your browser does not support the audio element.
-              </audio>
-            </td>
-            <td>
-              non, désolé<br />
-              <audio controls="">
-                <source
-                  src="assets/audio/6_invalid/invalide_deja_utilise/C/C_repetition_2.wav"
-                />
-                Your browser does not support the audio element.
-              </audio>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">Ingredient not in recipe 1</th>
-            <td>
-              j’en ai pas, désolé<br />
-              <audio controls="">
-                <source
-                  src="assets/audio/6_invalid/invalide_hors_recette/A/A_hors_recette_1.wav"
-                />
-                Your browser does not support the audio element.
-              </audio>
-            </td>
-            <td>
-              &lt;<i>euh … hm ?</i>&gt;<br />
-              <audio controls="">
-                <source
-                  src="assets/audio/6_invalid/invalide_hors_recette/B/B_hors_recette_1.wav"
-                />
-                Your browser does not support the audio element.
-              </audio>
-            </td>
-            <td>
-              il y a ça dans la recette ?<br />
-              <audio controls="">
-                <source
-                  src="assets/audio/6_invalid/invalide_hors_recette/C/C_hors_recette_1.wav"
-                />
-                Your browser does not support the audio element.
-              </audio>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">Ingredient not in recipe 2</th>
-            <td>
-              il y a ça dans la recette ?<br />
-              <audio controls="">
-                <source
-                  src="assets/audio/6_invalid/invalide_hors_recette/A/A_hors_recette_2.wav"
-                />
-                Your browser does not support the audio element.
-              </audio>
-            </td>
-            <td>
-              &lt;<i>heeeu ??</i>&gt;<br />
-              <audio controls="">
-                <source
-                  src="assets/audio/6_invalid/invalide_hors_recette/B/B_hors_recette_2.wav"
-                />
-                Your browser does not support the audio element.
-              </audio>
-            </td>
-            <td>
-              j’en ai pas, désolé<br />
-              <audio controls="">
-                <source
-                  src="assets/audio/6_invalid/invalide_hors_recette/C/C_hors_recette_2.wav"
-                />
-                Your browser does not support the audio element.
-              </audio>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">Ingredient not in recipe 3</th>
-            <td>
-              non, désolé<br />
-              <audio controls="">
-                <source
-                  src="assets/audio/6_invalid/invalide_hors_recette/A/A_hors_recette_3.wav"
-                />
-                Your browser does not support the audio element.
-              </audio>
-            </td>
-            <td>
-              &lt;<i>hmm</i>&gt;, aucune idée<br />
-              <audio controls="">
-                <source
-                  src="assets/audio/6_invalid/invalide_hors_recette/B/B_hors_recette_3.wav"
-                />
-                Your browser does not support the audio element.
-              </audio>
-            </td>
-            <td>
-              aucune idée<br />
-              <audio controls="">
-                <source
-                  src="assets/audio/6_invalid/invalide_hors_recette/C/C_hors_recette_3.wav"
-                />
-                Your browser does not support the audio element.
-              </audio>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">Question out of scope 1</th>
-            <td>
-              désolé, je sais pas<br />
-              <audio controls="">
-                <source src="assets/audio/7_out_scope/A/A_hors_scope_2.wav" />
-                Your browser does not support the audio element.
-              </audio>
-            </td>
-            <td>
-              &lt;<i>euh …</i>&gt;, je sais pas<br />
-              <audio controls="">
-                <source
-                  src="assets/audio/7_out_scope/B/B_question_hors_scope_2.wav"
-                />
-                Your browser does not support the audio element.
-              </audio>
-            </td>
-            <td>
-              désolé, je sais pas<br />
-              <audio controls="">
-                <source src="assets/audio/7_out_scope/C/C_HS_1.wav" />
-                Your browser does not support the audio element.
-              </audio>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">Question out of scope 2</th>
-            <td>
-              aucune idée<br />
-              <audio controls="">
-                <source src="assets/audio/7_out_scope/A/A_hors_scope_1.wav" />
-                Your browser does not support the audio element.
-              </audio>
-            </td>
-            <td>
-              &lt;<i>hmm</i>&gt;, aucune idée<br />
-              <audio controls="">
-                <source
-                  src="assets/audio/7_out_scope/B/B_question_hors_scope_1.wav"
-                />
-                Your browser does not support the audio element.
-              </audio>
-            </td>
-            <td>
-              aucune idée<br />
-              <audio controls="">
-                <source src="assets/audio/7_out_scope/C/C_HS_2.wav" />
-                Your browser does not support the audio element.
-              </audio>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">Celebration once recipe is over</th>
-            <td>
-              oui c’est fini<br />
-              <audio controls="">
-                <source src="assets/audio/8_yes_over/A_oui_fini.wav" />
-                Your browser does not support the audio element.
-              </audio>
-            </td>
-            <td>
-              ouiii &lt;<i>laughter</i>&gt;<br />
-              <audio controls="">
-                <source src="assets/audio/8_yes_over/B_oui_fini.wav" />
-                Your browser does not support the audio element.
-              </audio>
-            </td>
-            <td>
-              oui c’est fini<br />
-              <audio controls="">
-                <source src="assets/audio/8_yes_over/C_oui_fini.wav" />
-                Your browser does not support the audio element.
-              </audio>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">Goodbye</th>
-            <td>
-              au revoir<br />
-              <audio controls="">
-                <source src="assets/audio/9_bye/A_bye.wav" />
-                Your browser does not support the audio element.
-              </audio>
-            </td>
-            <td>
-              au revoir &lt;<i>laughter</i>&gt;<br />
-              <audio controls="">
-                <source src="assets/audio/9_bye/B_bye.wav" />
-                Your browser does not support the audio element.
-              </audio>
-            </td>
-            <td>
-              au revoir<br />
-              <audio controls="">
-                <source src="assets/audio/9_bye/C_bye.wav" />
-                Your browser does not support the audio element.
-              </audio>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+</head>
+<body>
+    <h1>Videos used in the online survey to assess the perception of different expressions of the Miroki virtual agent</h1>
+    <div class="video-container">
+        <div class="video-item">
+            <div class="video-title">Miroki-joy-low.mp4</div>
+            <video controls>
+                <source src="assets/video/Miroki-joy-low.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video-item">
+            <div class="video-title">Miroki-joy-high.mp4</div>
+            <video controls>
+                <source src="assets/video/Miroki-joy-high.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video-item">
+            <div class="video-title">Miroki-sadness-low.mp4</div>
+            <video controls>
+                <source src="assets/video/Miroki-sadness-low.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video-item">
+            <div class="video-title">Miroki-sadness-high.mp4</div>
+            <video controls>
+                <source src="assets/video/Miroki-sadness-high.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video-item">
+            <div class="video-title">Miroki-embarrassment-low.mp4</div>
+            <video controls>
+                <source src="assets/video/Miroki-embarrassment-low.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video-item">
+            <div class="video-title">Miroki-embarrassment-high.mp4</div>
+            <video controls>
+                <source src="assets/video/Miroki-embarrassment-high.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video-item">
+            <div class="video-title">Miroki-understanding-low.mp4</div>
+            <video controls>
+                <source src="assets/video/Miroki-understanding-low.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video-item">
+            <div class="video-title">Miroki-understanding-high.mp4</div>
+            <video controls>
+                <source src="assets/video/Miroki-understanding-high.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video-item">
+            <div class="video-title">Miroki-nounderstanding-low.mp4</div>
+            <video controls>
+                <source src="assets/video/Miroki-nounderstanding-low.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video-item">
+            <div class="video-title">Miroki-nounderstanding-high.mp4</div>
+            <video controls>
+                <source src="assets/video/Miroki-nounderstanding-high.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video-item">
+            <div class="video-title">Miroki-happybigsmile-low.mp4</div>
+            <video controls>
+                <source src="assets/video/Miroki-happybigsmile-low.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video-item">
+            <div class="video-title">Miroki-happybigsmile-high.mp4</div>
+            <video controls>
+                <source src="assets/video/Miroki-happybigsmile-high.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video-item">
+            <div class="video-title">Miroki-pride-low.mp4</div>
+            <video controls>
+                <source src="assets/video/Miroki-pride-low.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video-item">
+            <div class="video-title">Miroki-pride-high.mp4</div>
+            <video controls>
+                <source src="assets/video/Miroki-pride-high.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video-item">
+            <div class="video-title">Miroki-interest-low.mp4</div>
+            <video controls>
+                <source src="assets/video/Miroki-interest-low.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video-item">
+            <div class="video-title">Miroki-interest-high.mp4</div>
+            <video controls>
+                <source src="assets/video/Miroki-interest-high.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video-item">
+            <div class="video-title">Miroki-surprise-low.mp4</div>
+            <video controls>
+                <source src="assets/video/Miroki-surprise-low.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video-item">
+            <div class="video-title">Miroki-surprise-high.mp4</div>
+            <video controls>
+                <source src="assets/video/Miroki-surprise-high.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
     </div>
-    <div class="navbar justify-content-center">
-      <span class="px-2"
-        ><a href="https://enchanted.tools">Enchanted Tools</a> &
-        <a href="https://www.liglab.fr/">LIG</a></span
-      >
-      —
-      <span class="px-2 text-muted">2023</span>
-      —
-      <span class="px-2">All rights reserved</span>
-    </div>
-  </body>
+</body>
 </html>
